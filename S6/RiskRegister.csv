@@ -1,0 +1,6 @@
+ID,Description (hypothesis),Cause,Impact,L,S,Exposure,Owner,First Action,Trigger,Next Review
+R-01,Hosting outage during demo,Cloud provider downtime,Missed demo and stakeholder confidence reduced,3,4,12,Campus IT,Run pre-demo smoke tests and have local static fallback,Monitoring alert or failed health check,2025-11-01
+R-02,Performance degradation in RSVP path,Unoptimized DB queries and missing indexes,Slow RSVP and failed signups,4,4,16,Dev Team,Run load test T-PERF-01 and tune DB indexes,P95 latency > 600ms in tests,2025-10-30
+R-03,Data privacy non-compliance,Storing emails without consent,Regulatory action and data removal request,2,5,10,Security Officer,Add consent field and retention policy,User complaint / DSAR received,2025-11-10
+R-04,Email delivery failures,SMTP provider throttling,Users do not receive confirmations,3,3,9,Ops,Implement retries and alternate provider,Error rate in delivery report >5%,2025-11-05
+R-05,Stakeholder disengagement,Key approver unavailable,Delay in approvals and scope changes,2,4,8,Project Lead,Schedule recurring stakeholder sync and recorded decisions,Missed approval milestone,2025-10-28

@@ -1,0 +1,7 @@
+ID,Category,Measurable Statement,Rationale,Verification Approach,Test Plan ID,Owner
+NFR-01,Performance,P95 page load time < 600 ms at 50 concurrent users,Ensure responsive UI under expected load,Run k6 load tests and observe P95 < 600ms,T-PERF-01,Dev Team
+NFR-02,Capacity,Support 200 concurrent attendees across events without >1% error rate,Cover worst-case term peaks,Stress tests + monitoring (T-CAP-01),T-CAP-01,Dev Team
+NFR-03,Scalability,System maintains P95 RSVP flow < 800 ms at 100 concurrent RSVP events,Support higher demand scenarios,Scale tests and results recorded (T-SCALE-01),T-SCALE-01,Dev Team
+NFR-04,Notifications,Email confirmations delivered within 2 minutes for 95% of attempts,Ensure attendees get timely updates,Delivery reports and queue stats (T-NOTIF-01),T-NOTIF-01,Ops
+NFR-05,Security,Admin actions require MFA and audit logs retained 90 days,Protect scheduling and prevent abuse,Audit log review + MFA test (T-SEC-01),T-SEC-01,Security Officer
+NFR-06,Data Portability,Exported CSV/.ics validates against schema - no missing fields,Allow reliable import in external calendars,Automated export validation script (T-EXPORT-01),T-EXPORT-01,Dev Team
